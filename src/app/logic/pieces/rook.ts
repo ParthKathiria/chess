@@ -1,7 +1,7 @@
 import { Color, Coords, FENChar } from "../models";
 import { Piece } from "./piece";
 
-export class Queen extends Piece {
+export class Rook extends Piece {
     //Additional hasMoved variable to deal with castling
     private _hasMoved: boolean = false;
     protected override _FENChar : FENChar;
