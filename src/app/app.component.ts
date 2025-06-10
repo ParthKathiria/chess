@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChessBoardComponent } from './modules/chess-board/chess-board.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [ChessBoardComponent],
+  standalone: true
 })
 export class AppComponent {
   title = 'chess';
-}
+} 

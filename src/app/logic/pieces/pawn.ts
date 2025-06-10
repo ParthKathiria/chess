@@ -19,6 +19,7 @@ export class Pawn extends Piece {
         this._FENChar = pieceColor === Color.White ? FENChar.WhitePawn : FENChar.BlackPawn;
     }
 
+    // We need this method for black pawns because they move in the opposite direction of where white pawns move (therefore, -1*x).
     private setBlackPawnDirections():void {
         this._directions = this._directions.map(({x,y}) => ({x: -1*x , y})); 
     }
